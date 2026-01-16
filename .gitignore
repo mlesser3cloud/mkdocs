@@ -1,0 +1,12 @@
+# MkDocs build output (do not commit)
+my-project/site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/

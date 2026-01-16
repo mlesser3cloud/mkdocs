@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+# Azure Migrations Playbook
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This site is a practical, opinionated documentation suite for migrating workloads to Microsoft Azure.
 
-## Commands
+## Where to start
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- Start here: [Azure migrations](azure-migrations/index.md)
+- Building foundations: [Landing zone](azure-migrations/landing-zone/index.md)
+- Migrating workloads: [Migrate](azure-migrations/migrate/index.md) → [Cutover](azure-migrations/cutover/index.md)
+- Running day-2: [Operations](azure-migrations/operations/index.md)
 
-## Project layout
+## What this playbook optimizes for
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- Repeatable delivery (waves, runbooks, quality gates)
+- Security and governance by default
+- Clear cutover/rollback plans
+- Post-migration operational readiness (monitoring, backup, patching)
+
+!!! note
+    This playbook avoids hard-coding Azure product limits that can change. When precision matters, it calls out what to verify in official Azure documentation.

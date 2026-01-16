@@ -1,3 +1,104 @@
-site_name: My Docs
+site_name: Azure Migrations Playbook
+site_description: Practical guidance, checklists, and reference material for planning and executing Azure migrations.
+
+# GitHub Pages (project site) convention:
+#   https://<org-or-user>.github.io/<repo>/
+site_url: https://mlesser3cloud.github.io/mkdocs/
+
+repo_url: https://github.com/mlesser3cloud/mkdocs
+repo_name: mlesser3cloud/mkdocs
+
+nav:
+  - Home: index.md
+  - Azure Migrations:
+      - Start here: azure-migrations/index.md
+      - Strategy: azure-migrations/strategy/index.md
+      - Assessment: azure-migrations/assessment/index.md
+      - Landing zone: azure-migrations/landing-zone/index.md
+      - Identity: azure-migrations/identity/index.md
+      - Networking: azure-migrations/networking/index.md
+      - Security & compliance: azure-migrations/security/index.md
+      - Governance: azure-migrations/governance/index.md
+      - Migrate:
+          - Overview: azure-migrations/migrate/index.md
+          - Servers: azure-migrations/migrate/servers.md
+          - Databases: azure-migrations/migrate/databases.md
+          - Apps: azure-migrations/migrate/apps.md
+          - Files & objects: azure-migrations/migrate/files-and-objects.md
+      - Cutover: azure-migrations/cutover/index.md
+      - Operations: azure-migrations/operations/index.md
+      - Modernize & optimize: azure-migrations/modernization/index.md
+      - FinOps: azure-migrations/finops/index.md
+      - Resilience (BC/DR): azure-migrations/resilience/index.md
+      - Automation (IaC): azure-migrations/automation/index.md
+      - Tutorials:
+          - End-to-end landing zone bootstrap: azure-migrations/tutorials/end-to-end-landing-zone-bootstrap.md
+          - End-to-end VM estate migration: azure-migrations/tutorials/end-to-end-vm-estate-migration.md
+          - End-to-end app migration: azure-migrations/tutorials/end-to-end-app-migration.md
+      - Reference:
+          - Checklists: azure-migrations/reference/checklists.md
+          - Templates: azure-migrations/reference/templates.md
+          - Glossary: azure-migrations/reference/glossary.md
+          - RACI: azure-migrations/reference/raci.md
+          - Acceptance criteria: azure-migrations/reference/acceptance-criteria.md
+          - Risk register: azure-migrations/reference/risk-register.md
+      - ADRs:
+          - ADRs: azure-migrations/adr/index.md
+          - ADR template: azure-migrations/adr/adr-template.md
+          - "0001 Migration strategy baseline": azure-migrations/adr/0001-migration-strategy-baseline.md
+          - "0002 Landing zone approach": azure-migrations/adr/0002-landing-zone-approach.md
+          - "0003 Network connectivity pattern": azure-migrations/adr/0003-network-connectivity-pattern.md
+
 theme:
   name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+edit_uri: edit/main/my-project/docs/
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
