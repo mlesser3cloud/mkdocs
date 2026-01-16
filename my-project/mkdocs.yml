@@ -54,6 +54,11 @@ nav:
 theme:
   name: material
   language: en
+  logo: assets/brand/logo.svg
+  favicon: assets/brand/favicon.svg
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - navigation.instant
     - navigation.instant.prefetch
@@ -69,14 +74,14 @@ theme:
     - content.code.copy
   palette:
     - scheme: default
-      primary: blue
-      accent: light blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: blue
-      accent: light blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -85,6 +90,9 @@ edit_uri: edit/main/my-project/docs/
 
 plugins:
   - search
+
+extra_css:
+  - stylesheets/brand.css
 
 markdown_extensions:
   - admonition

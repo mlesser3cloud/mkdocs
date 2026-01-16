@@ -1,0 +1,95 @@
+/*
+  3Cloud-inspired brand styling for Material for MkDocs.
+  Notes:
+  - Uses Google Fonts for portability (Roboto + IBM Plex Sans).
+  - Palette tokens derived from 3cloudsolutions.com: #1E303C (navy), #33AEFF (accent), #005B97 (hover).
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --brand-navy: #1e303c;
+  --brand-accent: #33aeff;
+  --brand-accent-hover: #005b97;
+
+  /* Material for MkDocs theme tokens */
+  --md-primary-fg-color: var(--brand-navy);
+  --md-primary-fg-color--light: #2a4353;
+  --md-primary-fg-color--dark: #16242d;
+
+  --md-accent-fg-color: var(--brand-accent);
+  --md-accent-fg-color--transparent: rgba(51, 174, 255, 0.18);
+
+  /* Fonts */
+  --md-text-font: "Roboto";
+  --md-code-font: "Roboto Mono";
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--brand-navy);
+  --md-accent-fg-color: var(--brand-accent);
+  --md-accent-fg-color--transparent: rgba(51, 174, 255, 0.18);
+}
+
+/* Typography */
+.md-typeset {
+  font-weight: 300;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-family: "IBM Plex Sans", var(--md-text-font), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.md-typeset h1 {
+  font-weight: 200;
+}
+
+.md-typeset h2 {
+  font-weight: 300;
+}
+
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "IBM Plex Sans", var(--md-text-font), sans-serif;
+}
+
+/* Links */
+.md-typeset a {
+  color: var(--brand-accent);
+}
+
+.md-typeset a:hover {
+  color: var(--brand-accent-hover);
+}
+
+/* Buttons / CTAs */
+.md-typeset .md-button {
+  border-radius: 0.35rem;
+  font-weight: 400;
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #ffffff;
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: var(--brand-accent-hover);
+  border-color: var(--brand-accent-hover);
+  color: #ffffff;
+}
+
+/* Subtle card polish for landing-page grids */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid rgba(30, 48, 60, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
