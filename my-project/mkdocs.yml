@@ -29,7 +29,9 @@ nav:
       - Operations: azure-migrations/operations/index.md
       - Modernize & optimize: azure-migrations/modernization/index.md
       - FinOps: azure-migrations/finops/index.md
-      - Resilience (BC/DR): azure-migrations/resilience/index.md
+      - Resilience (BC/DR):
+          - Overview: azure-migrations/resilience/index.md
+          - BCDR failover plan (example): azure-migrations/resilience/bcdr-failover-plan.md
       - Automation (IaC): azure-migrations/automation/index.md
       - Tutorials:
           - End-to-end landing zone bootstrap: azure-migrations/tutorials/end-to-end-landing-zone-bootstrap.md
