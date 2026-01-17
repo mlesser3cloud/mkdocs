@@ -25,6 +25,7 @@ nav:
           - Databases: azure-migrations/migrate/databases.md
           - Apps: azure-migrations/migrate/apps.md
           - Files & objects: azure-migrations/migrate/files-and-objects.md
+          - HPC: azure-migrations/migrate/hpc.md
       - Cutover: azure-migrations/cutover/index.md
       - Operations: azure-migrations/operations/index.md
       - Modernize & optimize: azure-migrations/modernization/index.md

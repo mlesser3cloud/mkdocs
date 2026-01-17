@@ -23,3 +23,4 @@ Migration execution should run like a factory: consistent inputs, repeatable ste
 - [Databases](databases.md)
 - [Apps](apps.md)
 - [Files & objects](files-and-objects.md)
+- [HPC](hpc.md)
